@@ -10,9 +10,9 @@ import cors from 'cors'
 import connectDB from './config/db.js';
 const PORT = process.env.PORT || 8080;
 import router from './routes/foodRoute.js';
-import userRoutes from "/routes/userRoutes.js";
-import cartRoutes from "/routes/cartRoutes.js";
-import orderRoutes from "/routes/orderRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
+import cartRoutes from "./routes/cartRoutes.js";
+import orderRoutes from "./routes/orderRoutes.js";
 const app = express();
 app.use(express.json());
 app.use(cors());
