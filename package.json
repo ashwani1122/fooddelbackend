@@ -4,7 +4,7 @@
   "description": "",
   "license": "ISC",
   "author": "",
-  "main": "backend/server.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "server": "node server.js"
