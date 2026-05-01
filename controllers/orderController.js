@@ -4,11 +4,11 @@ import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 // placing user  order for frontend
 const placeOrder = async (req,res) =>{
-    const frontend_Url = "http://localhost:5173";
+    const frontend_Url = "https://frontendfooddel.vercel.app";
     try{
         const newOrder = new orderModel({
             userId: req.user,
-            orderItems: req.body.items,       
+            orderItems: req.body.items,      
             amount: req.body.amount,
             address: req.body.address,
             status: req.body.status,
