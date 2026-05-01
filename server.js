@@ -18,8 +18,9 @@ app.use(express.json());
 app.use(cors());
 app.use("/api/food" , router);
 app.use("/images", express.static("uploads"));
-app.use("/api/user" , userRoutes);
 app.use("/api/cart" , cartRoutes);
+app.use("/api/user" , userRoutes);
+
 app.use("/api/order" , orderRoutes);
 
 // db connection
